@@ -48,7 +48,6 @@ function renderButtons() {
     var a = $("<button>");
     a.addClass("gif-btn btn btn-secondary");
     a.attr("data-name", cartoons[i]);
-    a.attr("style", "margin-right: 15px;margin-bottom: 15px;");
     a.text(cartoons[i]);
     $("#buttons-view").append(a);
   }
