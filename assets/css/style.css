@@ -1,0 +1,12 @@
+.images {
+    width: 300px;
+    height: 300px;
+}
+
+.cartoon {
+    overflow: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+
