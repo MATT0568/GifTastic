@@ -3,6 +3,7 @@ window.onload = function () {
   $("#add-gif").on("click", function (event) {
     event.preventDefault();
     var cartoon = $("#cartoon-input").val().trim();
+    $('#cartoon-input').val('');
     cartoons.push(cartoon);
     renderButtons();
   });
@@ -18,7 +19,7 @@ function displayMovieInfo() {
     url: queryURL,
     method: "GET"
   }).then(function (response) {
-    for (var i = 0; i < 9; i++) {
+    for (var i = 0; i < 12; i++) {
       var cartoonDiv = $("<div class='cartoon'>");
 
       var rating = response.data[i].rating;
