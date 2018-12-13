@@ -4,8 +4,10 @@ window.onload = function () {
     event.preventDefault();
     var cartoon = $("#cartoon-input").val().trim();
     $('#cartoon-input').val('');
-    cartoons.push(cartoon);
-    renderButtons();
+    if (cartoon !== '') {
+      cartoons.push(cartoon);
+      renderButtons();
+    }
   });
 };
 
